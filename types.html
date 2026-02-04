@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประเภท UAV | UAV Command Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page-transition"></div>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <svg class="drone-icon" viewBox="0 0 64 64">
+                <circle cx="32" cy="32" r="6"/>
+                <line x1="32" y1="6" x2="32" y2="26"/>
+                <line x1="32" y1="38" x2="32" y2="58"/>
+                <line x1="6" y1="32" x2="26" y2="32"/>
+                <line x1="38" y1="32" x2="58" y2="32"/>
+            </svg>
+            <span class="brand-text">UAV SYSTEM</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">หน้าแรก</a>
+            <a href="history.html">ประวัติ</a>
+            <a href="types.html" class="active">ประเภท</a>
+            <a href="tech.html">เทคโนโลยี</a>
+            <a href="gallery.html">แกลเลอรี</a>
+            <a href="mission.html">ภารกิจ</a>
+            <a href="civil.html">พลเรือน</a>
+            <a href="military.html">UAV ทางทหาร</a>
+            <a href="future.html">อนาคต</a>
+            <a href="contact.html">ติดต่อ</a>
+        </div>
+        <div class="radar">
+       <div class="radar-sweep"></div>
+    </div>
+
+    <button id="darkModeToggle">🌙</button>
+</nav>
+    <div class="hud-overlay">
+    <div class="hud-grid"></div>
+    <div class="hud-data top-left">AI STATUS: ONLINE</div>
+    <div class="hud-data bottom-right">UAV LINK: STABLE</div>
+</div>
+    <div class="drone-exit">
+    <svg class="drone-icon" viewBox="0 0 64 64">
+        <circle cx="32" cy="32" r="6"/>
+        <line x1="32" y1="6" x2="32" y2="26"/>
+        <line x1="32" y1="38" x2="32" y2="58"/>
+        <line x1="6" y1="32" x2="26" y2="32"/>
+        <line x1="38" y1="32" x2="58" y2="32"/>
+    </svg>
+</div>
+</header>
+
+<!-- HERO -->
+<section class="hero types-hero">
+    <h1>UAV CLASSIFICATION</h1>
+    <p>การแบ่งประเภทอากาศยานไร้คนขับตามลักษณะและภารกิจ</p>
+</section>
+
+<!-- COMMAND CENTER -->
+<section class="command-center">
+
+    <!-- RADAR CLASSIFICATION -->
+    <div class="panel radar-panel">
+        <h2>CLASSIFICATION RADAR</h2>
+        <div class="classification-radar">
+            <div class="radar-sweep"></div>
+            <div class="radar-dot fixed"></div>
+            <div class="radar-dot rotary"></div>
+            <div class="radar-dot hybrid"></div>
+        </div>
+        <p class="radar-label">DETECTING UAV TYPES</p>
+    </div>
+
+    <!-- FIXED WING -->
+   <div class="panel uav-type with-image">
+    <div class="uav-text">
+        <h2>FIXED-WING UAV</h2>
+        <p>
+            UAV แบบปีกตรึง มีลักษณะคล้ายเครื่องบิน
+            บินได้นาน ระยะไกล เหมาะกับภารกิจลาดตระเวน
+            และสำรวจพื้นที่ขนาดใหญ่
+        </p>
+        <ul>
+            <li>⏱ บินได้นาน</li>
+            <li>📡 ครอบคลุมพื้นที่กว้าง</li>
+            <li>🛫 ต้องใช้รันเวย์หรือเครื่องยิง</li>
+        </ul>
+    </div>
+    <img src="fixed-wing.png" alt="Fixed Wing UAV">
+</div>
+
+    <!-- ROTARY WING -->
+    <div class="panel uav-type with-image">
+    <div class="uav-text">
+        <h2>ROTARY-WING UAV</h2>
+        <p>
+            UAV แบบปีกหมุน หรือ Multirotor
+            สามารถบินขึ้น–ลงในแนวดิ่ง
+            ควบคุมง่าย ใช้งานแพร่หลาย
+        </p>
+        <ul>
+            <li>⬆️ VTOL</li>
+            <li>🎥 ถ่ายภาพ/วิดีโอ</li>
+            <li>⚠️ ระยะบินจำกัด</li>
+        </ul>
+    </div>
+    <img src="Rotary-wing-drone.png" alt="Rotary Wing UAV">
+</div>
+
+
+    <!-- HYBRID -->
+ <div class="panel uav-type with-image">
+    <div class="uav-text">
+        <h2>HYBRID / VTOL UAV</h2>
+        <p>
+            UAV ลูกผสม รวมข้อดีของปีกตรึงและปีกหมุน
+            ใช้ในภารกิจพิเศษระดับทหารและอุตสาหกรรม
+        </p>
+        <ul>
+            <li>🔄 ขึ้นลงแนวดิ่ง</li>
+            <li>🛰 บินไกล</li>
+            <li>💰 ต้นทุนสูง</li>
+        </ul>
+    </div>
+    <img src="hybrid-vtol.png" alt="Hybrid VTOL UAV">
+</div>
+
+<div class="hud-overlay">
+    <svg class="hud-grid" viewBox="0 0 100 100" preserveAspectRatio="none">
+        <defs>
+            <pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse">
+                <path d="M10 0 L0 0 0 10" fill="none" stroke="rgba(0,255,255,0.15)" stroke-width="0.5"/>
+            </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid)" />
+    </svg>
+</div>
+<div class="uav-image-wrapper">
+    <img src="StealthRanger.jpg">
+    <div class="target-lock"></div>
+</div>
+<div class="panel satellite-panel">
+    <h2>SATELLITE TRACKING</h2>
+    <div class="satellite-map">
+        <div class="orbit"></div>
+        <div class="sat-dot"></div>
+    </div>
+</div>
+<div class="panel ai-analysis">
+    <h2>AI UAV DIAGNOSTIC</h2>
+    <pre id="aiDiagnostic"></pre>
+</div>
+<div class="page-transition"></div>
+
+    <!-- AI ANALYSIS -->
+    <div class="panel ai-types">
+        <h2>AI CLASSIFICATION ANALYSIS</h2>
+        <p id="aiTypeText">SCANNING UAV PROFILES...</p>
+    </div>
+
+</section>
+
+<button id="backToTop">⬆️</button>
+
+<script src="script.js"></script>
+</body>
+</html>
