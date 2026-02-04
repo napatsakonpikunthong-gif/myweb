@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAV Gallery | UAV Command Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- PAGE TRANSITION -->
+<div class="page-transition"></div>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <svg class="drone-icon" viewBox="0 0 64 64">
+                <circle cx="32" cy="32" r="6"/>
+                <line x1="32" y1="6" x2="32" y2="26"/>
+                <line x1="32" y1="38" x2="32" y2="58"/>
+                <line x1="6" y1="32" x2="26" y2="32"/>
+                <line x1="38" y1="32" x2="58" y2="32"/>
+            </svg>
+            <span class="brand-text">UAV SYSTEM</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">หน้าแรก</a>
+            <a href="history.html">ประวัติ</a>
+            <a href="types.html">ประเภท</a>
+            <a href="tech.html">เทคโนโลยี</a>
+            <a href="gallery.html" class="active">แกลเลอรี</a>
+            <a href="mission.html">ภารกิจ</a>
+            <a href="civil.html">พลเรือน</a>
+            <a href="military.html">UAV ทางทหาร</a>
+            <a href="future.html">อนาคต</a>
+            <a href="about.html">เกี่ยวกับโครงการ</a> 
+        </div>
+<div class="radar">
+       <div class="radar-sweep"></div>
+    </div>
+
+    <button id="darkModeToggle">🌙</button>
+</nav>
+    <div class="hud-overlay">
+    <div class="hud-grid"></div>
+    <div class="hud-data top-left">AI STATUS: ONLINE</div>
+    <div class="hud-data bottom-right">UAV LINK: STABLE</div>
+</div>
+    <div class="drone-exit">
+    <svg class="drone-icon" viewBox="0 0 64 64">
+        <circle cx="32" cy="32" r="6"/>
+        <line x1="32" y1="6" x2="32" y2="26"/>
+        <line x1="32" y1="38" x2="32" y2="58"/>
+        <line x1="6" y1="32" x2="26" y2="32"/>
+        <line x1="38" y1="32" x2="58" y2="32"/>
+    </svg>
+</div>
+</header>
+
+<!-- HERO -->
+<section class="hero gallery-hero">
+    <h1>UAV GALLERY</h1>
+    <p>ภาพปฏิบัติการอากาศยานไร้คนขับจากภารกิจต่าง ๆ</p>
+</section>
+
+<!-- COMMAND CENTER -->
+<section class="command-center gallery">
+
+    <!-- AI STATUS -->
+    <div class="panel ai-gallery">
+        <h2>AI IMAGE ANALYSIS</h2>
+        <p id="aiGalleryText">SCANNING VISUAL DATA...</p>
+    </div>
+
+    <!-- GALLERY GRID -->
+    <div class="gallery-grid">
+
+        <div class="gallery-item">
+            <img src="ReconUAV.jpg" alt="UAV Recon">
+            <div class="hud-overlay"></div>
+            <span class="label">RECON UAV</span>
+        </div>
+
+        <div class="gallery-item">
+            <img src="Reaper.jpeg" alt="UAV Military">
+            <div class="hud-overlay"></div>
+            <span class="label">MILITARY UAV</span>
+        </div>
+
+        <div class="gallery-item">
+            <img src="1_tyytacR7gT64tWUTkhekMQ.jpg" alt="UAV Civil">
+            <div class="hud-overlay"></div>
+            <span class="label">CIVIL DRONE</span>
+        </div>
+
+        <div class="gallery-item">
+            <img src="VTOL.jpg" alt="UAV VTOL">
+            <div class="hud-overlay"></div>
+            <span class="label">VTOL UAV</span>
+        </div>
+
+    </div>
+
+</section>
+
+<button id="backToTop">⬆️</button>
+
+<script src="script.js"></script>
+</body>
+</html>
